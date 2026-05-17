@@ -20,7 +20,7 @@ jobs:
       - name: Upload artifact for deployment
         uses: actions/upload-pages-artifact@v1
         with:
-          path: ./
+          path: ./gymbody-policies
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
