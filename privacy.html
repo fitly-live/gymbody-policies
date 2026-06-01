@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="color-scheme" content="light" />
   <meta name="theme-color" content="#ffffff" />
-  <title>Privacy Policy — AI Gym Body</title>
+  <title>Privacy Policy — Fitly</title>
   <style>
     :root { color-scheme: light; }
     html, body, .container, .legal-page { background-color: #ffffff !important; color: #111111 !important; -webkit-text-fill-color: #111111 !important; }
@@ -28,18 +28,18 @@
   <div class="container">
     <div class="legal-page">
       <h1>Privacy Policy</h1>
-      <p class="text-secondary mb-4">Last updated: May 21, 2026</p>
+      <p class="text-secondary mb-4">Last updated: June 1, 2026</p>
 
       <section>
         <h2>1. Information We Collect</h2>
-        <p>When you use AI Gym Body, we collect the following types of information:</p>
+        <p>When you use Fitly, we collect the following types of information:</p>
         <ul>
           <li><strong>Account Information:</strong> Name, email address, date of birth, gender, and password (hashed).</li>
           <li><strong>Profile Information:</strong> Height, weight, fitness level, fitness goals, bio, profile photo, and city.</li>
           <li><strong>Activity Data:</strong> Gym schedules, match requests, messages, game participation, workout/nutrition preferences, and onboarding completion status.</li>
           <li><strong>Shared Game Link Data:</strong> Public game IDs and shareable game URLs used to access individual game details pages.</li>
-          <li><strong>Location Data:</strong> When you grant permission, your device's geolocation is used to find nearby gyms and parks. This data is processed in real-time and not stored. Additionally, city search queries in the App are sent to OpenStreetMap's Nominatim service for autocomplete suggestions; these queries may include partial city names and are not stored by us.</li>
-          <li><strong>Authentication Data:</strong> If using Google Sign-In, your Google ID and email (no password is stored).</li>
+          <li><strong>Location Data:</strong> When you grant permission, your device's geolocation is used to find nearby gyms and parks. This data is processed in real-time and only stored when explicitly saved by you.</li>
+          <li><strong>Authentication Data:</strong> If using a third-party sign-in (Google, Facebook), we store the provider ID and email address; no third-party passwords are stored.</li>
         </ul>
       </section>
 
@@ -58,66 +58,59 @@
 
       <section>
         <h2>3. Data Storage &amp; Security</h2>
-        <p>Your data is stored securely in MongoDB Atlas, which provides encryption at rest and in transit. Passwords are hashed using bcrypt with a cost factor of 12. Authentication uses JSON Web Tokens (JWT) with automatic 7-day expiry.</p>
+        <p>Your data is stored securely in MongoDB Atlas. Passwords are hashed using bcrypt. Authentication uses JSON Web Tokens (JWT) with server-configured expiry.</p>
       </section>
 
       <section>
         <h2>4. Third-Party Services</h2>
         <p>We use the following third-party services:</p>
         <ul>
-          <li><strong>MongoDB Atlas:</strong> Cloud database storage with enterprise-grade security and encryption.</li>
-          <li><strong>Google OAuth:</strong> Optional sign-in method. Google receives your authentication request; we only store your Google ID and email.</li>
-          <li><strong>OpenStreetMap / Nominatim:</strong> Map display, location search for parks/gyms, and city autocomplete suggestions. When you search for a city in the manual gym or park entry forms, your query is sent to Nominatim to provide suggestions. No personal data is sent to these services.</li>
-          <li><strong>Leaflet (via CDN):</strong> Open-source map rendering library loaded from unpkg.com for interactive map display.</li>
-          <li><strong>Overpass API:</strong> Queries OpenStreetMap data for gym and park locations near a given area.</li>
+          <li><strong>MongoDB Atlas:</strong> Cloud database storage with encryption at rest and in transit.</li>
+          <li><strong>Google / Facebook OAuth:</strong> Optional sign-in methods. We only store the provider ID and email address for authentication purposes.</li>
+          <li><strong>OpenStreetMap / Nominatim:</strong> Map display and location search (city autocomplete). Search queries are not stored.</li>
+          <li><strong>Expo / Push providers:</strong> For push notifications via the mobile app.</li>
         </ul>
       </section>
 
       <section>
         <h2>5. Data Sharing</h2>
-        <p>We do not sell, trade, or rent your personal information to third parties. Your data is only shared:</p>
+        <p>We do not sell, trade, or rent your personal information to third parties. Your data may be shared:</p>
         <ul>
           <li>With other users as part of the App's features (e.g., your photo, name, fitness level, bio, city, and workout schedule may be visible to potential gym buddies)</li>
-          <li>Your availability schedule may be shown to relevant users to support matching and invite requests</li>
-          <li>Through shareable game links, limited game details (such as game type, time, park, and participant counts) may be viewable by anyone who has the link</li>
           <li>When required by law or legal process</li>
         </ul>
-        <p>Please review our <a href="https://gymbody.github.io/gymbody-policies/safety.html">Community Safety &amp; Public Availability Guidelines</a> for best practices when meeting new people through the App.</p>
       </section>
 
       <section>
         <h2>6. Cookies</h2>
-        <p>The App stores your authentication token in memory for session management. We do not use tracking cookies or third-party analytics cookies.</p>
+        <p>The App stores your authentication token in memory for session management. We do not use tracking cookies for advertising.</p>
       </section>
 
       <section>
         <h2>7. Your Rights</h2>
         <p>You have the right to:</p>
         <ul>
-          <li><strong>Access:</strong> View your personal data on your profile and home page</li>
+          <li><strong>Access:</strong> View your personal data on your profile</li>
           <li><strong>Update:</strong> Edit your personal information at any time</li>
-          <li><strong>Delete:</strong> Permanently delete your account and all associated data from the Settings page</li>
-          <li><strong>Portability:</strong> Contact us to request a copy of your data</li>
+          <li><strong>Delete:</strong> Permanently delete your account and associated data (see <a href="/data-deletion">Data Deletion</a>)</li>
         </ul>
       </section>
 
       <section>
         <h2>8. Data Retention</h2>
-        <p>Your data is retained as long as your account is active. When you delete your account, all personal data, schedules, matches, messages, and game participation records are permanently deleted.</p>
+        <p>Your data is retained as long as your account is active. When you delete your account, personal data, schedules, matches, messages, and game participation records are deleted or anonymized according to our retention policy.</p>
       </section>
 
       <section>
         <h2>9. Children's Privacy</h2>
-        <p>The App is not intended for users under 18 years of age. We do not knowingly collect personal information from anyone under 18. If we discover such data has been collected, it will be promptly deleted.</p>
+        <p>The App is not intended for users under 18 years of age. We do not knowingly collect personal information from anyone under 18. If discovered, such data will be promptly deleted.</p>
       </section>
 
       <section>
         <h2>Push Notifications &amp; Local Notification Storage</h2>
         <p>We use push notifications to keep you informed about match requests, game updates, and messages. To deliver push notifications we rely on Expo's push service and the <code>expo-notifications</code> library in the mobile app.</p>
 
-        <p>We store a user's Expo push token (stored as <em>expoPushToken</em> on the user's profile) on our backend exclusively for the purpose of delivering push messages. Notification message content is not persisted in our server database by default; instead the mobile app stores received notifications locally in-device in an in-app memory store for display and badge calculations. The mobile client uses a local state store (`useNotificationStore`) to manage notifications and may persist minimal seen/unread state to device storage (for example, via `AsyncStorage`) so unread counts survive app restarts.</p>
-
-        <p>If you do not wish to receive push notifications, you can disable them via your device settings or revoke notification permissions in the app. To stop server-side delivery for your account, remove the push token in Settings or contact support@aigymbody.com.</p>
+        <p>We store a user's Expo push token on the user's profile exclusively for delivering push messages. If you do not wish to receive push notifications, you can disable them in your device settings or revoke notification permissions in the app. To stop server-side delivery for your account, remove the push token in Settings or contact support@fitly.live.</p>
       </section>
 
       <section>
@@ -127,7 +120,7 @@
 
       <section>
         <h2>11. Contact</h2>
-        <p>For privacy-related questions or data requests, contact us at support@aigymbody.com.</p>
+        <p>For privacy-related questions or data requests, contact us at <a href="mailto:support@fitly.live">support@fitly.live</a> or visit <a href="https://www.fitly.live">https://www.fitly.live</a>.</p>
       </section>
     </div>
   </div>
